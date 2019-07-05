@@ -42,9 +42,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+/*
         switch1.setOnCheckedChangeListener { _, isChecked ->
             switch1.setText(if (isChecked) R.string.round_trip else R.string.one_way)
+
         }
+        */
     }
 }
