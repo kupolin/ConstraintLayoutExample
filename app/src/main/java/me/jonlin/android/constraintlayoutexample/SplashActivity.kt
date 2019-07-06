@@ -46,13 +46,12 @@ class SplashActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+      makeFullScreen()
 
-    makeFullScreen()
+      setContentView(R.layout.activity_splash)
 
-    setContentView(R.layout.activity_splash)
-
-    // Using a handler to delay loading the MainActivity
-    Handler().postDelayed({
+      // Using a handler to delay loading the MainActivity
+      Handler().postDelayed({
 
       // Start activity
       startActivity(Intent(this, MainActivity::class.java))
